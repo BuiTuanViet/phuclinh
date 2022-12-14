@@ -468,7 +468,7 @@
                                                 <div id="text-1031620644" class="text"><h4 style="text-align: center;">
                                                         <span style="color: #000000;">Người giúp việc nhà tiêu chuẩn</span>
                                                     </h4>
-                                                    <p style="text-align: justify;"><span style="color: #282828;">Người giúp việc nhà tiêu chuẩn, đáng tin cậy, có đầy đủ hồ sơ. Công ty Gia Bảo chịu trách nhiệm tuyển chọn, đào tạo và quản lý.</span>
+                                                    <p style="text-align: justify;"><span style="color: #282828;">Người giúp việc nhà tiêu chuẩn, đáng tin cậy, có đầy đủ hồ sơ. Công ty Phúc Linh chịu trách nhiệm tuyển chọn, đào tạo và quản lý.</span>
                                                     </p>
                                                     <style>#text-1031620644 {
                                                             font-size: .75rem
