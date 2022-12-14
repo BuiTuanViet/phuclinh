@@ -92,7 +92,7 @@
 
 
                         <li class="d-md-inline-block d-none">
-                            <a href="{{ route('sub_contact') }}" class="btn btn-primary" title="Liên hệ"
+                            <a href="{{ route('contact') }}" class="btn btn-primary" title="Liên hệ"
                             >Liên hệ</a></li>
                     </ul>
                 </div>

@@ -13,7 +13,7 @@
 
     <meta name='revisit-after' content='1 days'/>
     <meta name="robots" content="noodp,index,follow"/>
-    <meta name="theme-color" content="#5e2e86"/>
+    <meta name="theme-color" content="#00a652"/>
 
     <link rel="icon" href="{{ asset('site/100/302/581/themes/798703/assets/favicon.png') }}" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="{{ asset('site/100/302/581/themes/798703/assets/favicon.png') }}">
@@ -71,7 +71,7 @@
         bottom: 10px;
         z-index: 9000;
         display: block;
-        background: #5e2e86;
+        background: #00a652;
         color: white;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -108,7 +108,7 @@
             width: 45%;
             float: left;
             text-align: center;
-            background: #5e2e86;
+            background: #00a652;
             margin-left: 10px;
             margin-right: 5px;
             margin-top: 7px;

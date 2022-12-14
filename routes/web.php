@@ -173,7 +173,7 @@ Route::group(['namespace'=>'Site'], function() {
     Route::post('/doi-mat-khau','PersonController@storeResetPassword');
     Route::get('/don-hang-ca-nhan','PersonController@orderPerson')->name('orderPerson');
 
-    Route::get('/lien-he','ContactController@index');
+    Route::get('/lien-he','ContactController@index')->name('contact');
     Route::post('submit/contact','ContactController@submit')->name('sub_contact');
     
     Route::get('/binh-luan', 'CommentController@index')->name('comment');

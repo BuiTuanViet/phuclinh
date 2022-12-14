@@ -26,12 +26,12 @@ class AdminController extends Controller
     public function __construct($countNotifi = 12){
         try {
             $countNotification = new Notification();
-            $countReport = $countNotification->countReport();
+            $countReport = 0;
             $typeSubPostsAdmin = TypeSubPost::orderBy('type_sub_post_id')
                 ->get();
-            $notifications = Notification::orderBy('notify_id', 'desc')
-                ->offset(0)->limit($countNotifi)->get();
-
+//            $notifications = Notification::orderBy('notify_id', 'desc')
+//                ->offset(0)->limit($countNotifi)->get();
+            $notifications = array();
         } catch (\Exception $e) {
             $countReport = 0;
             $notifications = array();
