@@ -8,21 +8,22 @@
     <div class="evo-themes">
         <h1 class="d-none">{{ isset($information['ten-cong-ty']) ? $information['ten-cong-ty'] : ''}}</h1>
         <section class="awe-section-1">
-            <div class="home-slider " style="margin:0 auto">
-                @foreach(\App\Entity\SubPost::showSubPost('slide', 4) as $id => $item)
-                    <div class="item">
-                        <a href="{{ isset($item['link']) ? $item['link'] : '' }}" class="clearfix"
-                           title="{{ isset($item['title']) ? $item['title'] : '' }}">
-                            <picture>
-                                <img src=" {{ isset($item['image']) ? $item['image'] : '' }}"
-                                     alt=" {{ isset($item['title']) ? $item['title'] : '' }}"
-                                     class="lazy img-responsive center-block"/>
-                            </picture>
-                        </a>
-                    </div>
-                @endforeach
+            <div class="container">
+                <div class="home-slider " style="margin:0 auto">
+                    @foreach(\App\Entity\SubPost::showSubPost('slide', 4) as $id => $item)
+                        <div class="item">
+                            <a href="{{ isset($item['link']) ? $item['link'] : '' }}" class="clearfix"
+                               title="{{ isset($item['title']) ? $item['title'] : '' }}">
+                                <picture>
+                                    <img src=" {{ isset($item['image']) ? $item['image'] : '' }}"
+                                         alt=" {{ isset($item['title']) ? $item['title'] : '' }}"
+                                         class="lazy img-responsive center-block"/>
+                                </picture>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
             </div>
-
         </section>
 
         <style>
@@ -200,367 +201,13 @@
 
                             </div>
                         @endforeach
-                        <style>
-                            #col-1060651844 > .col-inner {
-                                border-radius: 24px;
-                            }
-                        </style>
-                        <style>
-                            .icon .icon-inner {
-                                background: #00a652;
-                                padding: 10px;
-                                border-radius: 50%;
-                            }
 
-                            .text h3 {
-                                line-height: 1.3;
-                                margin-top: 0.1em;
-                                margin-bottom: 0.1em;
-                                font-weight: 700;
-                                font-size: 1.25em;
-                            }
-
-                            .box-shadow, .row-box-shadow-2 .col-inner, .row-box-shadow-2-hover .col-inner:hover, .box-shadow-2, .box-shadow-2-hover:hover {
-                                -webkit-box-shadow: 0 3px 6px -4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-                                box-shadow: 0 3px 6px -4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-                            }
-
-                            .box-shadow-4-hover:hover {
-                                -webkit-box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);
-                                box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);
-                            }
-
-                            .image-cover {
-                                position: relative;
-                                height: auto;
-                                overflow: hidden;
-                                padding-top: 100%;
-                                background-position: 50% 50%;
-                                background-size: cover;
-                            }
-
-                            .image-cover img {
-                                right: 0;
-                                width: 100%;
-                                height: 100%;
-                                bottom: 0;
-                                left: 0;
-                                top: 0;
-                                position: absolute;
-                                -o-object-position: 50% 50%;
-                                object-position: 50% 50%;
-                                -o-object-fit: cover;
-                                object-fit: cover;
-                                font-family: "object-fit: cover;";
-                            }
-
-                            .section_service {
-                                background-color: rgb(242, 244, 245);
-                            }
-
-                            #col-1060651844 {
-                                margin-bottom: 30px
-                            }
-
-                            #col-1060651844 > .col-inner {
-                                border-radius: 24px;
-                            }
-
-                            .col-inner {
-                                position: relative;
-                                margin-left: auto;
-                                margin-right: auto;
-                                width: 100%;
-                                background-position: 50% 50%;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                -webkit-box-flex: 1;
-                                -ms-flex: 1 0 auto;
-                                flex: 1 0 auto;
-                            }
-
-                            .box {
-                                transition: opacity .3s, transform .3s, background-color .3s, -webkit-transform .3s;
-                            }
-
-                            .box {
-                                width: 100%;
-                                position: relative;
-                                margin: 0 auto;
-                            }
-
-                            .box-image {
-                                position: relative;
-                                height: 200px;
-                                margin: 0 auto;
-                                overflow: hidden;
-                            }
-
-                            .box-image[style*=-radius] {
-                                -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
-                            }
-
-                            .box-bounce .box-text {
-                                padding: 15px 15px 20px;
-                                z-index: 1;
-                            }
-
-                            .box-shadow-4-hover {
-                                transition: transform .3s, box-shadow .3s, background-color .3s, color .3s, opacity .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
-                            }
-
-                            .box-text {
-                                padding-top: 0.7em;
-                                padding-bottom: 1.4em;
-                                position: relative;
-                                width: 100%;
-                                font-size: .9em;
-                            }
-
-                            .text-center {
-                                text-align: center;
-                            }
-
-                            .icon-box-center .icon-box-img {
-                                margin: 0 auto 1em;
-                            }
-
-                            .icon-box .icon-box-img {
-                                margin-bottom: 1em;
-                                max-width: 100%;
-                                position: relative;
-                            }
-
-                            .box-text p {
-                                margin-top: 0.1em;
-                                margin-bottom: 0.1em;
-                            }
-
-                            @media (min-width: 850px) {
-                                #text-3418720892 {
-                                    font-size: .9rem;
-                                }
-                            }
-                        </style>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="section_2001066455">
-            <div class="bg section-bg fill bg-fill bg-loaded"></div>
-            <div class="section-content relative">
-                <div id="text-4143517547" class="text"><h4 style="text-align: center;"><span style="color: #000000;">TIÊU CHÍ HOẠT ĐỘNG</span>
-                    </h4>
-                    <p style="text-align: center;"><span style="color: #282828;">Chúng tôi hoạt động với những tiêu chí rất cụ thể để giữ chữ tín với khác hàng.</span>
-                    </p>
-                    <style>#text-4143517547 {
-                            font-size: .75rem;
-                            line-height: 2.3;
-                            text-align: center
-                        }
-
-                        @media (min-width: 850px) {
-                            #text-4143517547 {
-                                font-size: 1rem
-                            }
-                        }</style>
-                </div>
-                <div class="container">
-                <div class="row"  id="row-1749026182">
-                    <div id="col-1833620374" class="col-md-4 col-sm-12" data-animate="fadeInDown"
-                         data-animated="true">
-                        <div class="col-inner" style="background-color:rgb(255, 255, 255);">
-                            <div class="box has-hover   has-hover box-bounce box-text-bottom">
-                                <div class="box-image" style="border-radius:2%;">
-                                    <div class="">
-                                        <img width="400" height="267" alt="" decoding="async"
-                                             data-src="https://giupviecgiabao.com/wp-content/uploads/2022/09/nAxVu8a-copy-1.jpg.webp"
-                                             class="attachment-original size-original ls-is-cached lazyloaded"
-                                             src="https://giupviecgiabao.com/wp-content/uploads/2022/09/nAxVu8a-copy-1.jpg.webp">
-                                        <noscript>
-                                            <img width="400" height="267"
-                                                       src="https://giupviecgiabao.com/wp-content/uploads/2022/09/nAxVu8a-copy-1.jpg.webp"
-                                                       class="attachment-original size-original" alt=""
-                                                       decoding="async"/>
-                                        </noscript>
-                                    </div>
-                                </div>
-                                <div class="box-text text-center">
-                                    <div class="box-text-inner">
-                                        <div class="icon-box featured-box icon-box-center text-center"
-                                             style="margin:-52px 0px 0px 0px;">
-                                            <div class="icon-box-img" style="width: 60px">
-                                                <div class="icon">
-                                                    <div class="icon-inner">
-                                                        <img width="232" height="232" alt="" decoding="async"
-                                                             data-srcset="{{ asset('upload/service_img_0.png') }}"
-                                                             data-src="{{ asset('upload/service_img_0.png') }}"
-                                                             data-sizes="(max-width: 232px) 100vw, 232px"
-                                                             class="attachment-medium size-medium ls-is-cached lazyloaded"
-                                                             src="{{ asset('upload/service_img_0.png') }}"
-                                                             sizes="(max-width: 232px) 100vw, 232px"
-                                                             srcset="{{ asset('upload/service_img_0.png') }}">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="icon-box-text last-reset">
-                                                <div id="text-3921351284" class="text"><h4 style="text-align: center;">
-                                                        <span style="color: #000000;">Chuyên nghiệp – Tận tâm</span>
-                                                    </h4>
-                                                    <p style="text-align: justify;"><span style="color: #282828;">Đội ngũ tư vấn viên &amp; chăm sóc khách hàng kinh nghiệm, chuyên nghiệp, tận tâm,&nbsp; cam kết bảo hành dịch vụ khi Khách hàng chưa hài lòng</span>
-                                                    </p>
-                                                    <style>#text-3921351284 {
-                                                            font-size: .75rem
-                                                        }
-
-                                                        @media (min-width: 850px) {
-                                                            #text-3921351284 {
-                                                                font-size: .9rem
-                                                            }
-                                                        }</style>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <style>#col-1833620374 > .col-inner {
-                                border-radius: 24px;
-                            }</style>
-                    </div>
-                    <div id="col-881290175" class="col-md-4 col-sm-12" data-animate="fadeInDown"
-                         data-animated="true">
-                        <div class="col-inner" style="background-color:rgb(255, 255, 255);">
-                            <div class="box has-hover   has-hover box-bounce box-text-bottom">
-                                <div class="box-image" style="border-radius:2%;">
-                                    <div class="">
-                                        <img width="400" height="267" alt="" decoding="async"
-                                             data-src="https://giupviecgiabao.com/wp-content/uploads/2022/09/15.jpg.webp"
-                                             class="attachment-original size-original ls-is-cached lazyloaded"
-                                             src="https://giupviecgiabao.com/wp-content/uploads/2022/09/15.jpg.webp">
-                                        <noscript><img width="400" height="267"
-                                                       src="https://giupviecgiabao.com/wp-content/uploads/2022/09/15.jpg.webp"
-                                                       class="attachment-original size-original" alt=""
-                                                       decoding="async"/></noscript>
-                                    </div>
-                                </div>
-                                <div class="box-text text-center">
-                                    <div class="box-text-inner">
-                                        <div class="icon-box featured-box icon-box-center text-center"
-                                             style="margin:-52px 0px 0px 0px;">
-                                            <div class="icon-box-img" style="width: 60px">
-                                                <div class="icon">
-                                                    <div class="icon-inner">
-                                                        <img width="232" height="232" alt="" decoding="async"
-                                                             data-srcset="{{ asset('upload/service_img_1.png') }}"
-                                                             data-src="{{ asset('upload/service_img_1.png') }}"
-                                                             data-sizes="(max-width: 232px) 100vw, 232px"
-                                                             class="attachment-medium size-medium ls-is-cached lazyloaded"
-                                                             src="{{ asset('upload/service_img_1.png') }}"
-                                                             sizes="(max-width: 232px) 100vw, 232px"
-                                                             srcset="{{ asset('upload/service_img_1.png') }}">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="icon-box-text last-reset">
-                                                <div id="text-1031620644" class="text"><h4 style="text-align: center;">
-                                                        <span style="color: #000000;">Người giúp việc nhà tiêu chuẩn</span>
-                                                    </h4>
-                                                    <p style="text-align: justify;"><span style="color: #282828;">Người giúp việc nhà tiêu chuẩn, đáng tin cậy, có đầy đủ hồ sơ. Công ty Phúc Linh chịu trách nhiệm tuyển chọn, đào tạo và quản lý.</span>
-                                                    </p>
-                                                    <style>#text-1031620644 {
-                                                            font-size: .75rem
-                                                        }
-
-                                                        @media (min-width: 850px) {
-                                                            #text-1031620644 {
-                                                                font-size: .9rem
-                                                            }
-                                                        }</style>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <style>#col-881290175 > .col-inner {
-                                border-radius: 24px;
-                            }</style>
-                    </div>
-                    <div id="col-1376299015" class="col-md-4 col-sm-12"  data-animate="fadeInDown"
-                         data-animated="true">
-                        <div class="col-inner" style="background-color:rgb(255, 255, 255);">
-                            <div class="box has-hover   has-hover box-bounce box-text-bottom">
-                                <div class="box-image" style="border-radius:2%;">
-                                    <div class="">
-                                        <img width="400" height="267" alt="" decoding="async"
-                                             data-src="https://giupviecgiabao.com/wp-content/uploads/2022/09/16.jpg.webp"
-                                             class="attachment-original size-original ls-is-cached lazyloaded"
-                                             src="https://giupviecgiabao.com/wp-content/uploads/2022/09/16.jpg.webp">
-                                        <noscript><img width="400" height="267"
-                                                       src="https://giupviecgiabao.com/wp-content/uploads/2022/09/16.jpg.webp"
-                                                       class="attachment-original size-original" alt=""
-                                                       decoding="async"/></noscript>
-                                    </div>
-                                </div>
-                                <div class="box-text text-center">
-                                    <div class="box-text-inner">
-                                        <div class="icon-box featured-box icon-box-center text-center"
-                                             style="margin:-52px 0px 0px 0px;">
-                                            <div class="icon-box-img" style="width: 60px">
-                                                <div class="icon">
-                                                    <div class="icon-inner">
-                                                        <img width="232" height="232" alt="" decoding="async"
-                                                         data-srcset="{{ asset('upload/service_img_2.png') }}"
-                                                         data-src="{{ asset('upload/service_img_2.png') }}"
-                                                         data-sizes="(max-width: 232px) 100vw, 232px"
-                                                         class="attachment-medium size-medium ls-is-cached lazyloaded"
-                                                         src="{{ asset('upload/service_img_2.png') }}"
-                                                         sizes="(max-width: 232px) 100vw, 232px"
-                                                         srcset="{{ asset('upload/service_img_2.png') }}">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="icon-box-text last-reset">
-                                                <div id="text-1265404019" class="text"><h4 style="text-align: center;">
-                                                        <span style="color: #000000;">Chi phí hợp lý</span></h4>
-                                                    <p style="text-align: justify;"><span style="color: #282828;">Giá dịch vụ được nhân viên của đơn vị tư vấn cho khách hàng ngay từ khi tiếp nhận thông tin. Cam kết giá cạnh tranh nhất.</span>
-                                                    </p>
-                                                    <style>#text-1265404019 {
-                                                            font-size: .75rem
-                                                        }
-
-                                                        @media (min-width: 850px) {
-                                                            #text-1265404019 {
-                                                                font-size: .9rem
-                                                            }
-                                                        }</style>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <style>#col-1376299015 > .col-inner {
-                                border-radius: 24px;
-                            }</style>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <style>#section_2001066455 {
-                    padding-top: 30px;
-                    padding-bottom: 30px;
-                }
-
-                #section_2001066455 .section-bg.bg-loaded {
-                    background-image: url(https://giupviecgiabao.com/wp-content/uploads/2022/11/bg_gt.jpg.webp);
-                }</style>
-        </section>
+        @include('site.common.rule')
 
         <section class="awe-section-6">
             <div class="section_customer">
@@ -587,6 +234,75 @@
         <section class="awe-section-7">
             <div class="section_partner">
                 <div class="container">
+
+                    <h3 class="section-title section-title-center">
+                        <b>
+                        </b>
+                        <span class="section-title-main" style="color:rgb(4, 3, 56);">
+                            VÀ HÀNG TRĂM DOANH NGHIỆP KHÁC ĐÃ TIN TƯỞNG GIÚP VIỆC PHÚC LINH
+                        </span><b></b>
+                    </h3>
+                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_656381854">
+                        <div class="img-inner dark">
+                            <img width="290" height="24" alt="" decoding="async"
+                                 data-srcset="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp 290w, https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star-280x24.png.webp 280w"
+                                 data-src="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp"
+                                 data-sizes="(max-width: 290px) 100vw, 290px"
+                                 class="attachment-original size-original ls-is-cached lazyloaded"
+                                 src="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp"
+                                 sizes="(max-width: 290px) 100vw, 290px"
+                                 srcset="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp 290w, https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star-280x24.png.webp 280w">
+                            <noscript><img width="290" height="24" alt="" decoding="async"
+                                           data-srcset="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp 290w, https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star-280x24.png.webp 280w"
+                                           data-src="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp"
+                                           data-sizes="(max-width: 290px) 100vw, 290px"
+                                           class="attachment-original size-original lazyload"
+                                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                                <noscript><img width="290" height="24" alt="" decoding="async"
+                                               data-srcset="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp 290w, https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star-280x24.png.webp 280w"
+                                               data-src="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp"
+                                               data-sizes="(max-width: 290px) 100vw, 290px"
+                                               class="attachment-original size-original lazyload"
+                                               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                                    <noscript><img width="290" height="24"
+                                                   src="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp"
+                                                   class="attachment-original size-original" alt="" decoding="async"
+                                                   srcset="https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star.png.webp 290w, https://giupviecgiabao.com/wp-content/uploads/2022/09/border-star-280x24.png.webp 280w"
+                                                   sizes="(max-width: 290px) 100vw, 290px"/></noscript>
+                        </div>
+                        <style>
+                            #image_656381854 {
+                                width: 76%;
+                                margin: auto;
+                                margin-bottom: 20px
+                            }
+
+                            @media (min-width: 550px) {
+                                #image_656381854 {
+                                    width: 33%;
+                                }
+                            }</style>
+                    </div>
+                    <style>
+                        .section-title {
+                            position: relative;
+                            -js-display: flex;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-orient: horizontal;
+                            -webkit-box-direction: normal;
+                            -ms-flex-flow: row wrap;
+                            flex-flow: row wrap;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+                            width: 100%;
+                        }
+                    </style>
                     <div class="evo-brands">
                         @foreach(\App\Entity\SubPost::showSubPost('doi-tac', 4) as $id => $item)
                             <a class="brands-item" href="#" title="{{ isset($item['title']) ? $item['title'] : '' }}">

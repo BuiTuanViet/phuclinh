@@ -43,5 +43,7 @@
             </div>
         </section>
     </div>
+    @include('site.common.rule')
+
 @endsection
 
